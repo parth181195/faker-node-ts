@@ -1,0 +1,25 @@
+{
+  "name": "faker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && npm run lint",
+    "clean": "rimraf ./dist",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "tsc": "tsc",
+    "test": "mocha -r ts-node/register src/**/*.spec.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.8.7",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "tslint": "^5.20.1",
+    "typescript": "^5.6.3",
+    "typescript-eslint-parser": "^21.0.2"
+  },
+  "private": true,
+  "dependencies": {
+    "@faker-js/faker": "^9.1.0"
+  }
+}
